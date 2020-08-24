@@ -85,7 +85,7 @@ body {
 .main {
   background-color: var(--dark-blue);
   border-radius: 10px;
-  padding: 30px;
+  padding: 30px 30px 20px 30px;
   text-align: center;
   position: relative;
 }
@@ -172,14 +172,15 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     width: 920px;
   }
   .header {
     width: 340px;
     margin-right: 30px;
+    margin-bottom: 0;
   }
   .main {
     -webkit-box-flex: 2;
