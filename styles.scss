@@ -1,0 +1,118 @@
+:root {
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--very-dark-blue);
+  background: no-repeat url(images/bg-mobile.png);
+  background-size: cover;
+  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  width: 320px;
+}
+.header {
+  background-color: var(--dark-blue);
+  border-radius: 10px 100px 10px 10px;
+  padding: 40px;
+  margin-bottom: 17px;
+
+  li {
+    list-style: none;
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    // height: auto;
+    // vertical-align: bottom;
+    img {
+      // height: 100%;
+    }
+  }
+}
+.nav {
+  // height: 50px;
+  display: flex;
+}
+.logo {
+  margin-bottom: 30px;
+}
+.main {
+  background-color: var(--dark-blue);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  p {
+    margin-bottom: 20px;
+    color: var(--pale-blue);
+  }
+}
+.status-bar {
+  background-color: var(--very-dark-blue);
+  border-radius: 30px;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+.inner-status-bar {
+  background: linear-gradient(0.25turn, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  height: 14px;
+  width: 6%;
+  border-radius: 30px;
+  padding: 2px;
+  transition: all 2s;
+}
+.inner-status-marker {
+  background-color: white;
+  height: 100%;
+  width: 10px;
+  float: right;
+  border-radius: 30px;
+}
+.status-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+.space-left {
+  background: white;
+  width: 160px;
+  padding: 15px 0px;
+  position: absolute;
+  right: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 10px;
+
+  h4 {
+    font-size: 2.3rem;
+    margin-right: 10px;
+  }
+  span {
+    font-size: 0.8rem;
+    // font-weight: bold;
+    color: var(--grayish-blue);
+  }
+}
