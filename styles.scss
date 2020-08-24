@@ -115,8 +115,8 @@ body {
 @media only screen and (min-width: 1000px) {
   body {
     background: no-repeat url(images/bg-desktop.png) var(--very-dark-blue);
-    background-size: contain;
-    background-position: bottom left;
+    background-size: 100% 50%;
+    background-position: bottom;
   }
   .container {
     flex-direction: row;
