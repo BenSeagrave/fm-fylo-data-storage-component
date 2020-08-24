@@ -25,6 +25,8 @@ body {
 }
 .container {
   width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 .header {
   background-color: var(--dark-blue);
@@ -42,15 +44,9 @@ body {
     justify-content: center;
     width: 48px;
     height: 48px;
-    // height: auto;
-    // vertical-align: bottom;
-    img {
-      // height: 100%;
-    }
   }
 }
 .nav {
-  // height: 50px;
   display: flex;
 }
 .logo {
@@ -112,7 +108,38 @@ body {
   }
   span {
     font-size: 0.8rem;
-    // font-weight: bold;
     color: var(--grayish-blue);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+    width: 920px;
+  }
+  .header {
+    width: 340px;
+    margin-right: 30px;
+  }
+  .main {
+    flex: 2;
+    text-align: left;
+  }
+  .space-left {
+    top: -50px;
+    right: 40px;
+    border-bottom-right-radius: 0;
+  }
+  .space-left:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: white;
+    border-bottom: 0;
+    border-right: 0;
   }
 }
